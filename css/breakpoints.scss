@@ -97,6 +97,11 @@
         display: flex;
     }
 
+    .cont-box{
+        padding: 20px;
+        background-color: $blanco-hueso;
+        box-shadow: 1px 3px 5px #0000002b;
+    }
     .container{
         &.container-encuesta{
             .encuesta-riesgo{
@@ -105,6 +110,38 @@
                         span{
                             display: none;
                         }
+                    }
+                }
+            }
+        }
+        &.container-resultado-encuesta{
+            .container-table{
+                .header{
+                    display: none !important;
+                }
+                .body{
+                    width: 100%;
+                    .fila{
+                        width: 100%;
+                        flex-direction: column;
+                    }
+                }
+                .content{
+                    width: 100% !important;
+                    &.center{
+                        text-align: left !important;
+                    }
+                    .mobile-title{
+                        display: inline-block !important;
+                    }
+                }
+            }
+
+            .resultado{
+                .perfil, .puntaje{
+                    width: 100%;
+                    strong{
+                        border-bottom: 1px solid #fff;
                     }
                 }
             }
