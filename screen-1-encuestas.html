@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="icon" href="https://www.davivienda.com/PersonasDaviviendaNewTheme/images/faviconDav.ico" type="image/x-icon">
+    <!--  Default Styles  -->
+    <link rel="stylesheet" href="css/styles.css">
+    <title> Davivienda S.A. </title>
+</head>
+
+<body>
+    <section class="cont-main-app gray">
+        <a href="javascript:void(0)" class="btn-back">
+            <img src="images/icon-dv-btnback.svg" alt="Atrás">
+            Atrás
+        </a>
+
+        <div class="cont-box">
+            <div class="container container-encuesta">
+                <h1 class="main left no-mrgn">Encuesta de riesgo</h1>
+                <h2 class="light no-mrgn-top">Para modificar su perfil de riesgo, responda las siguientes preguntas</h1>
+                
+                <div class="encuesta-riesgo">
+                    <div class="tabs">
+                        <a href="javascript:void(0)" class="tablinks" onclick="openCity(event, 'qstn1')" id="defaultOpen"><span>Pregunta</span> 1</a>
+                        <a href="javascript:void(0)" class="tablinks" onclick="openCity(event, 'qstn2')"><span>Pregunta</span> 2</a>
+                        <a href="javascript:void(0)" class="tablinks" onclick="openCity(event, 'qstn3')"><span>Pregunta</span> 3</a>
+                        <a href="javascript:void(0)" class="tablinks" onclick="openCity(event, 'qstn4')"><span>Pregunta</span> 4</a>
+                        <a href="javascript:void(0)" class="tablinks" onclick="openCity(event, 'qstn5')"><span>Pregunta</span> 5</a>
+                    </div>
+
+                    <div class="content-encuestas"> class="tablinks" onclick="openCity(event, 'qstn2')"
+                        <form action="" class="options-content-encuestas tabcontent" id="qstn1">
+                        <h2 class="regular justify small no-mrgn-top">Toda inversión implica un riesgo y una rentabilidad; ¿Con cuál de las siguientes se identifica?</h2>
+                            <div class="input input-option">
+                                <label class="radio">
+                                    <span class="puntaje">2 Puntos</span><br>
+                                    Obtener una rentabilidad conservadora con un leve riesgo de pérdida en algún momento de su inversión.
+                                    <input type="radio" value="" name="facta-usa"> 
+                                    <div class="radio-indicator"></div>
+                                </label>
+                            </div>
+                            <div class="input input-option">
+                                <label class="radio">
+                                    <span class="puntaje">4 Puntos</span><br>
+                                    Obtener una rentabilidad moderada, teniendo en cuenta que en algún momento de su inversión existe una posibilidad de pérdida.
+                                    <input type="radio" value="" name="facta-usa">
+                                    <div class="radio-indicator"></div>
+                                </label>
+                            </div>
+                            <div class="input input-option">
+                                <label class="radio">
+                                    <span class="puntaje">6 Puntos</span><br>
+                                    Obtener altas rentabilidades asumiendo un alto nivel de riesgo en su inversión.
+                                    <input type="radio" value="" name="facta-usa">
+                                    <div class="radio-indicator"></div>
+                                </label>
+                            </div>
+                            <div class="input input-option">
+                                <label class="radio">
+                                    <span class="puntaje">14 Puntos</span><br>
+                                    Deseo especular buscando la mayor rentabilidad posible y asumiendo un alto nivel de riesgo.
+                                    <input type="radio" value="" name="facta-usa">
+                                    <div class="radio-indicator"></div>
+                                </label>
+                            </div>
+                        </form>
+
+                        <form action="" class="options-content-encuestas tabcontent" id="qstn2">
+                            <h2 class="regular justify small no-mrgn-top">Generalmente, cuando piensa en invertir, ¿Con cuál de los siguientes plazos se siente más cómodo?</h2>
+                            <div class="input input-option">
+                                <label class="radio">
+                                    <span class="puntaje">1 Puntos</span><br>
+                                    Entre 1 y 90 días.
+                                    <input type="radio" value="" name="facta-usa"> 
+                                    <div class="radio-indicator"></div>
+                                </label>
+                            </div>
+                            <div class="input input-option">
+                                <label class="radio">
+                                    <span class="puntaje">2 Puntos</span><br>
+                                    Mayor a 90 días hasta 1 año.
+                                    <input type="radio" value="" name="facta-usa">
+                                    <div class="radio-indicator"></div>
+                                </label>
+                            </div>
+                            <div class="input input-option">
+                                <label class="radio">
+                                    <span class="puntaje">3 Puntos</span><br>
+                                    Mayor a 1 año hasta 3 años
+                                    <input type="radio" value="" name="facta-usa">
+                                    <div class="radio-indicator"></div>
+                                </label>
+                            </div>
+                            <div class="input input-option">
+                                <label class="radio">
+                                    <span class="puntaje">4 Puntos</span><br>
+                                    Mayor a 3 años
+                                    <input type="radio" value="" name="facta-usa">
+                                    <div class="radio-indicator"></div>
+                                </label>
+                            </div>
+                        </form>
+
+                        <form action="" class="options-content-encuestas tabcontent" id="qstn3">
+                            <h2 class="regular justify small no-mrgn-top">¿En cuál de los siguientes productos acostumbra a invertir?:</h2>
+                            <div class="input input-option">
+                                <label class="radio">
+                                    <span class="puntaje">1 Puntos</span><br>
+                                    CDT`s y/o cuentas de ahorros o corriente.
+                                    <input type="radio" value="" name="facta-usa"> 
+                                    <div class="radio-indicator"></div>
+                                </label>
+                            </div>
+                            <div class="input input-option">
+                                <label class="radio">
+                                    <span class="puntaje">2 Puntos</span><br>
+                                    Fondos voluntarios de pensiones y/o fondos de inversión colectiva de liquidez, de bajo nivel de riesgo.
+                                    <input type="radio" value="" name="facta-usa">
+                                    <div class="radio-indicator"></div>
+                                </label>
+                            </div>
+                            <div class="input input-option">
+                                <label class="radio">
+                                    <span class="puntaje">3 Puntos</span><br>
+                                    Acciones, fondos voluntarios de pensiones, fondos de inversión colectiva y/o productos de renta fija (CDT o bonos) asumiendo posibles pérdidas.
+                                    <input type="radio" value="" name="facta-usa">
+                                    <div class="radio-indicator"></div>
+                                </label>
+                            </div>
+                            <div class="input input-option">
+                                <label class="radio">
+                                    <span class="puntaje">4 Puntos</span><br>
+                                    Acciones, fondos voluntarios de pensiones, derivados o activos internacionales; fondos de inversión colectiva, renta fija, divisas y/o derivados, asumiendo altos niveles de riesgo.
+                                    <input type="radio" value="" name="facta-usa">
+                                    <div class="radio-indicator"></div>
+                                </label>
+                            </div>
+                        </form>
+
+                        <form action="" class="options-content-encuestas tabcontent" id="qstn4">
+                            <h2 class="regular justify small no-mrgn-top">Frente a posibles desvalorizaciones en los mercados financieros que puedan afectar el valor de su inversión, usted ó la sociedad que representa, preferiría:</h2>
+                            <div class="input input-option">
+                                <label class="radio">
+                                    <span class="puntaje">1 Puntos</span><br>
+                                    Cancelar o liquidar totalmente su producto para evitar pérdidas.
+                                    <input type="radio" value="" name="facta-usa"> 
+                                    <div class="radio-indicator"></div>
+                                </label>
+                            </div>
+                            <div class="input input-option">
+                                <label class="radio">
+                                    <span class="puntaje">2 Puntos</span><br>
+                                    Retirar o liquidar parcialmente su inversión teniendo en cuenta posibles pérdidas en el corto plazo.
+                                    <input type="radio" value="" name="facta-usa">
+                                    <div class="radio-indicator"></div>
+                                </label>
+                            </div>
+                            <div class="input input-option">
+                                <label class="radio">
+                                    <span class="puntaje">3 Puntos</span><br>
+                                    Mantener su inversión fijando un límite de pérdida de acuerdo con la evolución del mercado.
+                                    <input type="radio" value="" name="facta-usa">
+                                    <div class="radio-indicator"></div>
+                                </label>
+                            </div>
+                            <div class="input input-option">
+                                <label class="radio">
+                                    <span class="puntaje">4 Puntos</span><br>
+                                    Incrementar su inversión dependiendo de la evolución del mercado, manteniendo un objetivo de largo plazo.
+                                    <input type="radio" value="" name="facta-usa">
+                                    <div class="radio-indicator"></div>
+                                </label>
+                            </div>
+                        </form>
+
+                        <form action="" class="options-content-encuestas tabcontent" id="qstn5">
+                            <h2 class="regular justify small no-mrgn-top">¿Qué porcentaje de su patrimonio disponible para invertir, destinaría a productos financieros que pueden ser más rentables pero también más riesgosos?</h2>
+                            <div class="input input-option">
+                                <label class="radio">
+                                    <span class="puntaje">1 Puntos</span><br>
+                                    1% - 10%
+                                    <input type="radio" value="" name="facta-usa"> 
+                                    <div class="radio-indicator"></div>
+                                </label>
+                            </div>
+                            <div class="input input-option">
+                                <label class="radio">
+                                    <span class="puntaje">2 Puntos</span><br>
+                                    11% - 20%
+                                    <input type="radio" value="" name="facta-usa">
+                                    <div class="radio-indicator"></div>
+                                </label>
+                            </div>
+                            <div class="input input-option">
+                                <label class="radio">
+                                    <span class="puntaje">3 Puntos</span><br>
+                                    21% - 40%
+                                    <input type="radio" value="" name="facta-usa">
+                                    <div class="radio-indicator"></div>
+                                </label>
+                            </div>
+                            <div class="input input-option">
+                                <label class="radio">
+                                    <span class="puntaje">4 Puntos</span><br>
+                                    Mayor a 40%
+                                    <input type="radio" value="" name="facta-usa">
+                                    <div class="radio-indicator"></div>
+                                </label>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+
+        <div class="cont-btn">
+            <button type="button" class="btn-success regresar">Regresar</button>
+            <button type="button" class="btn-success active">Continuar</button>
+        </div>	
+        
+    </section>
+
+    <script>
+        function openCity(evt, cityName) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(cityName).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+
+        document.getElementById("defaultOpen").click();
+    </script>
+</body>
+
+</html>
