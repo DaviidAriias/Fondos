@@ -1540,6 +1540,9 @@ hr, .separador {
         color: #575757;
         background-color: #ededed; }
 
+/* Main Styles - Generic */
+/*---------------------------------------------------*/
+/* Colores */
 /* PC */
 /* laptop */
 /* Tablet */
@@ -1596,13 +1599,38 @@ hr, .separador {
     width: 100%; }
     .container.container-resultado-encuesta .container-table .body .fila {
       width: 100%;
-      flex-direction: column; }
+      display: inline-block;
+      margin-bottom: 10px;
+      border-radius: 6px;
+      overflow: hidden; }
+      .container.container-resultado-encuesta .container-table .body .fila:last-of-type {
+        margin-bottom: 0; }
   .container.container-resultado-encuesta .container-table .content {
-    width: 100% !important; }
+    width: 100% !important;
+    padding: 0 !important;
+    vertical-align: top; }
+    .container.container-resultado-encuesta .container-table .content:nth-child(1), .container.container-resultado-encuesta .container-table .content:nth-child(2) {
+      width: 50% !important; }
+    .container.container-resultado-encuesta .container-table .content:nth-child(1) .mobile-title {
+      border-right: 1px solid #fff; }
+    .container.container-resultado-encuesta .container-table .content:last-of-type {
+      padding: 10px !important; }
+      .container.container-resultado-encuesta .container-table .content:last-of-type .mobile-title {
+        background-color: inherit;
+        color: #575757;
+        padding: 0; }
+      .container.container-resultado-encuesta .container-table .content:last-of-type span {
+        padding: 0; }
     .container.container-resultado-encuesta .container-table .content.center {
       text-align: left !important; }
     .container.container-resultado-encuesta .container-table .content .mobile-title {
-      display: inline-block !important; }
+      display: inline-block !important;
+      padding: 10px;
+      background-color: #565656;
+      color: #fff; }
+    .container.container-resultado-encuesta .container-table .content span {
+      padding: 10px;
+      display: inline-block; }
   .container.container-resultado-encuesta .resultado .perfil, .container.container-resultado-encuesta .resultado .puntaje {
     width: 100%; }
     .container.container-resultado-encuesta .resultado .perfil strong, .container.container-resultado-encuesta .resultado .puntaje strong {
@@ -1627,5 +1655,9 @@ hr, .separador {
 /* Portrait and Landscape */
 /* ----------- iPhone X ----------- */
 /* Portrait and Landscape */
+@media (max-width: 365px) {
+  .container.container-resultado-encuesta .container-table .content:first-of-type .mobile-title {
+    display: inline-block !important;
+    padding: 18px !important; } }
 
 /*# sourceMappingURL=styles.css.map */

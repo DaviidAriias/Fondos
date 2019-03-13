@@ -1,3 +1,9 @@
+@import 'admin';
+///<reference path="_admin.scss" />
+
+@import 'mixins';
+///<reference path="_mixins.scss" />
+
 /* PC */
 @media (max-width: 91em) {
     body{
@@ -123,16 +129,51 @@
                     width: 100%;
                     .fila{
                         width: 100%;
-                        flex-direction: column;
+                        display: inline-block;
+                        margin-bottom: 10px;
+                        border-radius: 6px;
+                        overflow: hidden;
+                        //flex-direction: column;
+                        &:last-of-type{
+                            margin-bottom: 0;
+                        }
                     }
                 }
                 .content{
                     width: 100% !important;
+                    padding: 0 !important;
+                    vertical-align: top;
+                    &:nth-child(1), &:nth-child(2){
+                        width: 50% !important;
+                    }
+                    &:nth-child(1){
+                        .mobile-title{
+                            border-right: 1px solid #fff;
+                        }
+                    }
+                    &:last-of-type{
+                        padding: 10px !important;
+                        .mobile-title{
+                            background-color: inherit;
+                            color: $negro;
+                            padding: 0;
+                        }
+                        span{
+                            padding: 0;
+                        }
+                    }
                     &.center{
                         text-align: left !important;
                     }
                     .mobile-title{
                         display: inline-block !important;
+                        padding: 10px;
+                        background-color: darken($negro, 1%);
+                        color: #fff;
+                    }
+                    span{
+                        padding: 10px;
+                        display: inline-block;
                     }
                 }
             }
@@ -205,5 +246,22 @@
 /* Portrait and Landscape */
 @media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3){
     
+}
+
+@media (max-width: 365px){
+    .container{
+        &.container-resultado-encuesta{
+            .container-table{
+                .content{
+                    &:first-of-type{
+                        .mobile-title{
+                            display: inline-block !important;
+                            padding: 18px !important;  
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
 
